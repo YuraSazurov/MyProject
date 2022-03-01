@@ -19,6 +19,7 @@
 }
 
 .bank-card {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: flex-end;
@@ -41,6 +42,9 @@
     color: white;
   }
   &__number {
+    position: absolute;
+    bottom: 47%;
+    left: 12%;
     display: flex;
     align-items: flex-end;
     width: 100%;
@@ -63,17 +67,20 @@
     height: 100%;
   }
   &__name {
+    position: absolute;
+    bottom: 20%;
+    left: 12%;
     align-self: flex-end;
     font-size: calc(5px + 16 * (100vw / 1280));
     min-width: 40%;
-    margin-bottom: 1rem;
+    // margin-bottom: ;
   }
   &__exp-date {
+    position: absolute;
+    bottom: 32%;
+    left: 53%;
     display: flex;
     align-items: flex-start;
-    padding-inline: 4vw;
-    align-self: flex-start;
-    margin-top: 1.5vw;
     font-size: calc(2px + 16 * (100vw / 1280));
   }
   &__text {
@@ -81,7 +88,7 @@
     font-weight: bold;
   }
 
-  &__back-side {
+  .back-side {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -98,11 +105,19 @@
     color: black;
   }
   &__name-back-side {
+    position: absolute;
+    bottom: 52%;
+    left: 15%;
+    font-size: calc(2px + 16 * (100vw / 1280));
     font-family: "Beth Ellen", cursive;
     font-weight: 500;
     transform: rotate(-1deg);
   }
   &__cvv-back-side {
+    position: absolute;
+    bottom: 52%;
+    left: 80%;
+    font-size: calc(2px + 16 * (100vw / 1280));
     font-family: "Courier Prime", monospace;
     font-weight: 400;
   }

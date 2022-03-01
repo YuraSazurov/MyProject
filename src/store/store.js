@@ -1,9 +1,19 @@
 import { ACTIONS_TYPES } from "./types";
+import moment from "moment";
+const getMonths = () => {
+  const month = moment().month("January").format("M")
+  debugger
+  return month;
+};
+const getYears = () => {
+  const year =  moment().year() - 3;
+  return year
+};
 
 const initialState = {
   cardNumber: "",
-  expirationMonth: '',
-  expirationYear: '',
+  expirationMonth: getMonths(),
+  expirationYear: getYears(),
   name: '',
   cvv: '',
 
@@ -47,3 +57,4 @@ export const store = (state = initialState, action) => {
   }
   // return state;
 };
+
