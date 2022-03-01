@@ -1,0 +1,10 @@
+@mixin mobile {
+  @media (max-width: 1023px) {
+    @content;
+  }
+}
+@mixin fourK {
+  @media (min-width: 3000px) {
+    @content;
+  }
+}

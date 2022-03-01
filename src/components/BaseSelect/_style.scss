@@ -1,0 +1,10 @@
+.base-select {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  &__label {
+    font-size: 1rem;
+    margin-bottom: 8px;
+  }
+}
